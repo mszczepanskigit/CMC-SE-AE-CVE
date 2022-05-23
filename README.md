@@ -1,4 +1,4 @@
-# CMC-SE-AE-CVE
+# Estimating Integrals using Monte Carlo Methods with reducing variation
 Estimating Integrals using:
 
  - Crude Monte Carlo estimator
