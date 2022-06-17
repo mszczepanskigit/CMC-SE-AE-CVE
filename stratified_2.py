@@ -14,6 +14,7 @@ def strat_opt(s0, k, r, s, R, m, R_prim):
        :param R_prim: number of pilot replications
        :return: estimated value
     """
+    np.random.seed(465726236011%(2**32-1))
     # pilot simulations for estimating variance in each strata
     est_s = []
     for i in range(m):
@@ -36,14 +37,3 @@ def strat_opt(s0, k, r, s, R, m, R_prim):
         Y_est.append(np.mean(np.maximum(s0 * np.exp(mu + s * z) - k, 0)))
     return exp(-r) * np.mean(Y_est)
 
-# np.random.seed(465726236011 % (2 ** 32 - 1))
-# print(strat_opt(100, 100, 0.05, 0.25, 10000, 5, 100))
-# print(strat_opt(100, 100, 0.05, 0.25, 10000, 10, 100))
-# print(strat_opt(100, 100, 0.05, 0.25, 10000, 5, 1000))
-# print(strat_opt(100, 100, 0.05, 0.25, 10000, 10, 1000))
-# print(strat_opt(100, 100, 0.05, 0.25, 1000000, 5, 100))
-# print(strat_opt(100, 100, 0.05, 0.25, 1000000, 10, 100))
-# print(strat_opt(100, 100, 0.05, 0.25, 1000000, 50, 100))
-# print(strat_opt(100, 100, 0.05, 0.25, 1000000, 5, 1000))
-# print(strat_opt(100, 100, 0.05, 0.25, 1000000, 10, 1000))
-# print(strat_opt(100, 100, 0.05, 0.25, 1000000, 50, 1000))
