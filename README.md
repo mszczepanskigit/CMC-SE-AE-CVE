@@ -1,4 +1,4 @@
-# Estimating Integrals using Monte Carlo Methods with reducing variation
+# Estimating Option with discounted payoff at time 1 using Monte Carlo Methods with reducing variation
 Estimating Integrals using:
 
  - Crude Monte Carlo estimator
