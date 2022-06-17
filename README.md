@@ -10,3 +10,5 @@ Estimating Integrals using:
  - Control variate estimator
 
 All methods provide a reduction variation method to increase the estimate result.
+
+In *Estimating_Options_with_Monte_Carlo_methods.pdf* file you can find whole description and all computations.
