@@ -89,7 +89,7 @@ if __name__ == "__main__":
     print("Stratified Asian (proportional) value R=10^6, m=4, n=2:", strat_prop2(100, 100, 0.05, 0.25, 1000000, 4, 2))
     print("Stratified Asian (proportional) value R=10^6, m=4, n=3:", strat_prop2(100, 100, 0.05, 0.25, 1000000, 4, 3))
     print("Stratified Asian (proportional) value R=10^6, m=4, n=17:", strat_prop2(100, 100, 0.05, 0.25, 1000000, 4, 17))
-    print("Stratified Asian (proportional) value R=10^6, m=10, n=17:", strat_prop2(100, 100, 0.05, 0.25, 1000000, 10, 2))
+    print("Stratified Asian (proportional) value R=10^6, m=10, n=2:", strat_prop2(100, 100, 0.05, 0.25, 1000000, 10, 2))
     print("Stratified Asian (proportional) value R=10^6, m=10, n=3:", strat_prop2(100, 100, 0.05, 0.25, 1000000, 10, 3))
     print("Stratified Asian (proportional) value R=10^6, m=10, n=17:", strat_prop2(100, 100, 0.05, 0.25, 1000000, 10, 17))
 
