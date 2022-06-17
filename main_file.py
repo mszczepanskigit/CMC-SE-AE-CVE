@@ -6,7 +6,7 @@ if __name__ == "__main__":
 
     print(u'\u2500' * 10)
 
-    """
+    
     # CMC European
     cmc_eu_102 = cmc_european(s0=100, k=100, r=0.05, s=0.25, R=100)
     cmc_eu_104 = cmc_european(s0=100, k=100, r=0.05, s=0.25, R=10000)
@@ -127,7 +127,7 @@ if __name__ == "__main__":
     print("Antithetic European value R=10^4:", ant_eu_104)
     print("Antithetic European error R=10^4:", ant_eu_104_err)
     print("Antithetic European value R=10^6:", ant_eu_106)
-    print("Antithetic European error R=10^6:", ant_eu_106_err)"""
+    print("Antithetic European error R=10^6:", ant_eu_106_err)
 
     print(u'\u2500' * 10)
 
