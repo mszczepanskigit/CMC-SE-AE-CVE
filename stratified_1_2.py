@@ -14,6 +14,7 @@ def strat_prop2(s0, k, r, s, R, m, n):
     :param n: dimension
     :return: estimated value
     """
+    np.random.seed(465726236011 % (2 ** 32 - 1))
     S = []
     for i in range(1, n + 1):
         s_temp = []
@@ -47,19 +48,4 @@ def strat_prop2(s0, k, r, s, R, m, n):
         # estimator for each strata
         Y.append(np.mean(np.maximum(1 / n * est_temp - k, 0)))
 
-    print(exp(-r) * np.mean(Y))
-
-# np.random.seed(465726236011 % (2 ** 32 - 1))
-# strat_prop2(100, 100, 0.05, 0.25, 10000, 4, 2)
-# strat_prop2(100, 100, 0.05, 0.25, 10000, 4, 3)
-# strat_prop2(100, 100, 0.05, 0.25, 10000, 4, 17)
-# strat_prop2(100, 100, 0.05, 0.25, 10000, 10, 2)
-# strat_prop2(100, 100, 0.05, 0.25, 10000, 10, 3)
-# strat_prop2(100, 100, 0.05, 0.25, 10000, 10, 17)
-#
-# strat_prop2(100, 100, 0.05, 0.25, 1000000, 4, 2)
-# strat_prop2(100, 100, 0.05, 0.25, 1000000, 4, 3)
-# strat_prop2(100, 100, 0.05, 0.25, 1000000, 4, 17)
-# strat_prop2(100, 100, 0.05, 0.25, 1000000, 10, 2)
-# strat_prop2(100, 100, 0.05, 0.25, 1000000, 10, 3)
-# strat_prop2(100, 100, 0.05, 0.25, 1000000, 10, 17)
+    return (exp(-r) * np.mean(Y))
