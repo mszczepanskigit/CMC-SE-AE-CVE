@@ -53,8 +53,62 @@ if __name__ == "__main__":
 
     print(u'\u2500' * 10)
     
-    # Stratified estimator
-    ---->TUTAJ WERA WKLEP SWOJE RZECZY<-----
+    # Stratified European (proportional allocation)
+    
+    print("Stratified European (proportional) value R=10^4, m=5:", strat_prop(100, 100, 0.05, 0.25, 10000, 5))
+    print("Stratified European (proportional) value R=10^4, m=10:", strat_prop(100, 100, 0.05, 0.25, 10000, 10))
+    print("Stratified European (proportional) value R=10^6, m=5:", strat_prop(100, 100, 0.05, 0.25, 1000000, 5))
+    print("Stratified European (proportional) value R=10^6, m=10:", strat_prop(100, 100, 0.05, 0.25, 1000000, 10))
+    print("Stratified European (proportional) value R=10^6, m=50:", strat_prop(100, 100, 0.05, 0.25, 1000000, 50))
+    
+    print(u'\u2500' * 10)
+    
+    # Stratified European (optimal allocation)
+    
+    print("Stratified European (optimal) value R=10^4, m=5, R'=100:", strat_opt(100, 100, 0.05, 0.25, 10000, 5, 100))
+    print("Stratified European (optimal) value R=10^4, m=10, R'=100:", strat_opt(100, 100, 0.05, 0.25, 10000, 10, 100))
+    print("Stratified European (optimal) value R=10^4, m=5, R'=1000:", strat_opt(100, 100, 0.05, 0.25, 10000, 5, 1000))
+    print("Stratified European (optimal) value R=10^4, m=10, R'=1000:", strat_opt(100, 100, 0.05, 0.25, 10000, 10, 1000))
+    print("Stratified European (optimal) value R=10^6, m=5, R'=100:", strat_opt(100, 100, 0.05, 0.25, 1000000, 5, 100))
+    print("Stratified European (optimal) value R=10^6, m=10, R'=100:", strat_opt(100, 100, 0.05, 0.25, 1000000, 10, 100))
+    print("Stratified European (optimal) value R=10^6, m=50, R'=100:", strat_opt(100, 100, 0.05, 0.25, 1000000, 50, 100))
+    print("Stratified European (optimal) value R=10^6, m=5, R'=1000:", strat_opt(100, 100, 0.05, 0.25, 1000000, 5, 1000))
+    print("Stratified European (optimal) value R=10^6, m=10, R'=1000:", strat_opt(100, 100, 0.05, 0.25, 1000000, 10, 1000))
+    print("Stratified European (optimal) value R=10^6, m=50, R'=1000:", strat_opt(100, 100, 0.05, 0.25, 1000000, 50, 1000))
+    
+    print(u'\u2500' * 10)
+    
+    # Stratified Asian (proportional allocation)
+    
+    print("Stratified Asian (proportional) value R=10^4, m=4, n=2:", strat_prop2(100, 100, 0.05, 0.25, 10000, 4, 2))
+    print("Stratified Asian (proportional) value R=10^4, m=4, n=3:", strat_prop2(100, 100, 0.05, 0.25, 10000, 4, 3))
+    print("Stratified Asian (proportional) value R=10^4, m=4, n=17:", strat_prop2(100, 100, 0.05, 0.25, 10000, 4, 17))
+    print("Stratified Asian (proportional) value R=10^4, m=10, n=17:", strat_prop2(100, 100, 0.05, 0.25, 10000, 10, 2))
+    print("Stratified Asian (proportional) value R=10^4, m=10, n=3:", strat_prop2(100, 100, 0.05, 0.25, 10000, 10, 3))
+    print("Stratified Asian (proportional) value R=10^4, m=10, n=17:", strat_prop2(100, 100, 0.05, 0.25, 10000, 10, 17))
+    print("Stratified Asian (proportional) value R=10^6, m=4, n=2:", strat_prop2(100, 100, 0.05, 0.25, 1000000, 4, 2))
+    print("Stratified Asian (proportional) value R=10^6, m=4, n=3:", strat_prop2(100, 100, 0.05, 0.25, 1000000, 4, 3))
+    print("Stratified Asian (proportional) value R=10^6, m=4, n=17:", strat_prop2(100, 100, 0.05, 0.25, 1000000, 4, 17))
+    print("Stratified Asian (proportional) value R=10^6, m=10, n=17:", strat_prop2(100, 100, 0.05, 0.25, 1000000, 10, 2))
+    print("Stratified Asian (proportional) value R=10^6, m=10, n=3:", strat_prop2(100, 100, 0.05, 0.25, 1000000, 10, 3))
+    print("Stratified Asian (proportional) value R=10^6, m=10, n=17:", strat_prop2(100, 100, 0.05, 0.25, 1000000, 10, 17))
+
+    print(u'\u2500' * 10)
+    
+    # Stratified Asian (optimal allocation)
+    
+    print("Stratified Asian (optimal) value R=10^4, m=4, n=2, R'=100:", strat_opt2(100, 100, 0.05, 0.25, 10000, 4, 2, 100))
+    print("Stratified Asian (optimal) value R=10^4, m=4, n=3, R'=100:", strat_opt2(100, 100, 0.05, 0.25, 10000, 4, 3, 100))
+    print("Stratified Asian (optimal) value R=10^4, m=4, n=17, R'=100:", strat_opt2(100, 100, 0.05, 0.25, 10000, 4, 17, 100))
+    print("Stratified Asian (optimal) value R=10^4, m=10, n=2, R'=100:", strat_opt2(100, 100, 0.05, 0.25, 10000, 10, 2, 100))
+    print("Stratified Asian (optimal) value R=10^4, m=10, n=3, R'=100:", strat_opt2(100, 100, 0.05, 0.25, 10000, 10, 3, 100))
+    print("Stratified Asian (optimal) value R=10^4, m=10, n=17, R'=100:", strat_opt2(100, 100, 0.05, 0.25, 10000, 10, 17, 100))
+    print("Stratified Asian (optimal) value R=10^6, m=4, n=2, R'=1000:", strat_opt2(100, 100, 0.05, 0.25, 1000000, 4, 2, 1000))
+    print("Stratified Asian (optimal) value R=10^6, m=4, n=3, R'=1000:", strat_opt2(100, 100, 0.05, 0.25, 1000000, 4, 3, 1000))
+    print("Stratified Asian (optimal) value R=10^6, m=4, n=17, R'=1000:", strat_opt2(100, 100, 0.05, 0.25, 1000000, 4, 17, 1000))
+    print("Stratified Asian (optimal) value R=10^6, m=10, n=2, R'=1000:", strat_opt2(100, 100, 0.05, 0.25, 1000000, 10, 2, 1000))
+    print("Stratified Asian (optimal) value R=10^6, m=10, n=3, R'=1000:", strat_opt2(100, 100, 0.05, 0.25, 1000000, 10, 3, 1000))
+    print("Stratified Asian (optimal) value R=10^6, m=10, n=17, R'=1000:", strat_opt2(100, 100, 0.05, 0.25, 1000000, 10, 17, 1000))
     
     print(u'\u2500' * 10)
 
@@ -95,3 +149,5 @@ if __name__ == "__main__":
     print("Control Variate European error R=10^6:", cv_eu_106_err)
 
     print(u'\u2500' * 10)
+       
+    
